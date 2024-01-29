@@ -126,7 +126,7 @@ const Main = () => {
     <>
       <body>
         <header>
-          <h2>New Social</h2>
+          <h2>Social Reminder</h2>
           <div style={{ display: "flex", gap: "8px" }}>
             <Button type="primary" danger onClick={logoutHandler}>
               Logout
