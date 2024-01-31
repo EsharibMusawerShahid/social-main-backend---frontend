@@ -295,7 +295,7 @@ app.post("/api/v1/changePassword", async (req, res) => {
     if (!user) throw new Error("User not found");
 
     const isMatched = await varifyHash(oldPassword, user.password);
-    if (!isMatched) throw new Error("Password Did'nt Match");
+    if (!isMatched) throw new Error("Password Didn't Match");
 
     const newHash = await stringToHash(newPassword);
 
